@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Rick van der Zwet <rick.vanderzwet@anywi.com>">
+    <title>GPX overlay over Moon data</title>
+    <style>
+      #popup {
+        min-width: 600px;
+      }
+
+      .map {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+      }
+      .map:-webkit-full-screen {
+        height: 100%;
+        margin: 0;
+      }
+      .map:-ms-fullscreen {
+        height: 100%;
+      }
+      .map:fullscreen {
+        height: 100%;
+      }
+      .ol-rotate {
+        top: 3em;
+      }
+      .custom-mouse-position {
+	border-radius: 0 4px 0 0;
+	background: rgba(255,255,255,0.8);
+	bottom: 0px;
+	left: 0px;
+	position: absolute;
+	max-width: calc(100% - 1.3em);
+	padding: 2px;
+	width: 140px;
+	height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <div id="popup"></div>
+    <div id="mouse-position"></div>
+    <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>

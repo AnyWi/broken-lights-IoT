@@ -1,0 +1,19 @@
+{
+  "name": "lights",
+  "version": "1.0.0",
+  "description": "Openlayers application to display GPX tracks on top of moononline open-data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html objects.geojson route.gpx",
+    "build": "parcel build --public-url . index.html objects.geojson route.gpx"
+  },
+  "author": "Rick van der Zwet <rick.vanderzwet@anywi.com>",
+  "license": "ISC",
+  "dependencies": {
+    "ol": "^6.1.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
